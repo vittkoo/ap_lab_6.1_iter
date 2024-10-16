@@ -25,7 +25,7 @@ void ProcessArray(int* a, const int size, int& count, int& sum)
     count = 0;
     sum = 0;
     for (int i = 0; i < size; i++)
-        if (a[i] % 2 != 0 && a[i] % 3 == 0) { // непарний і кратний 3
+        if (!(a[i] % 2 != 0 && a[i] % 3 == 0)) { // непарний і кратний 3
             sum += a[i];
             count++;
             a[i] = 0;
